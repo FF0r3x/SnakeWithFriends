@@ -1,6 +1,6 @@
-const BG_COLOUR = '#231f20';
-const SNAKE_COLOUR = '#c2c2c2';
-const FOOD_COLOUR = '#e66916';
+const BG_COLOUR = '#f5f5f5';
+const SNAKE_COLOUR = '#00eeff';
+const FOOD_COLOUR = '#ffa200';
 
 const socket = io('https://sleepy-island-33889.herokuapp.com/');
 
@@ -102,9 +102,9 @@ function handleGameOver(data) {
   gameActive = false;
 
   if (data.winner === playerNumber) {
-    alert('You Win!');
+    alert('You won the game!');
   } else {
-    alert('You Lose :(');
+    alert('You Lost the game!');
   }
 }
 
@@ -114,7 +114,7 @@ function handleGameCode(gameCode) {
 
 function handleUnknownCode() {
   reset();
-  alert('Unknown Game Code')
+  alert('Invalid lobby ID')
 }
 
 function handleTooManyPlayers() {
