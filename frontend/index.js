@@ -1,5 +1,5 @@
 const BG_COLOUR = '#f5f5f5';
-const SNAKE_COLOUR = '#00eeff';
+const SNAKE_COLOUR = '#43E4FF';
 const FOOD_COLOUR = '#ffa200';
 
 const socket = io('https://sleepy-island-33889.herokuapp.com/');
@@ -69,7 +69,7 @@ function paintGame(state) {
   ctx.fillRect(food.x * size, food.y * size, size, size);
 
   paintPlayer(state.players[0], size, SNAKE_COLOUR);
-  paintPlayer(state.players[1], size, 'red');
+  paintPlayer(state.players[1], size, '#FF4343');
 }
 
 function paintPlayer(playerState, size, colour) {
