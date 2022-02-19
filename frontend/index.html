@@ -60,6 +60,15 @@ body {
             >
               Join lobby
             </button>
+
+             <script>
+              const urlParams = new URLSearchParams(window.location.search);
+              
+              const gid = urlParams.get('gid')
+              console.log(gid);
+              
+              document.getElementById('gameCodeInput').value = gid;
+            </script>
           
 <style>
 div {
