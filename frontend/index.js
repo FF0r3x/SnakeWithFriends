@@ -102,9 +102,9 @@ function handleGameOver(data) {
   gameActive = false;
 
   if (data.winner === playerNumber) {
-    window.open("https://snakewithfriends.netlify.app/win");
+    window.location.replace('https://snakewithfriends.netlify.app/win');
   } else {
-    window.open("https://snakewithfriends.netlify.app/lose");
+    window.location.replace('https://snakewithfriends.netlify.app/lose');
   }
 }
 
